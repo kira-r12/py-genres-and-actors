@@ -9,8 +9,9 @@ def main() -> QuerySet:
     for item in items:
         Genre.objects.create(name=item)
 
-    items = [("George","Klooney"),( "Kianu", "Reaves"),("Scarlett","Keegan"),
-             ("Will", "Smith"),( "Jaden", "Smith"),("Scarlett","Johansson")]
+    items = [("George", "Klooney"), ("Kianu", "Reaves"),
+             ("Scarlett", "Keegan"),
+             ("Will", "Smith"), ("Jaden", "Smith"), ("Scarlett", "Johansson")]
     for first, last in items:
         Actor.objects.create(first_name=first, last_name=last)
 
